@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualización | Hackaton SPE 2020</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+  <link rel="stylesheet" href="custom.css" />
+
+
+  <!-- libreria para el formateo del csv -->
+  <script src="js/papaparse.js"></script>
+
+
+  <!-- librerias usadar para generar la tabal dinamica -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.23.0/pivot.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.23.0/pivot.min.js'></script>
+  <script src='https://cdn.plot.ly/plotly-basic-latest.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.22.0/plotly_renderers.min.js'></script>
+
+</head>
+
+<body>
+  <script src="js/main.js"></script>
+
+
+
+  <div class="my-bg-photo bg-secondary text-white py-5 text-center shadow">
+    <h1 class="display-4"> <strong>SPE Colombia Hackaton 2020</strong> </h1>
+    <p class="lead mb-0"> <strong> Análisis datos Agencia Nacional de Hidrocarburos - ANH </strong></p>
+  </div>
+
+  <div class="container my-custom-container pt-3">
+    <nav class="mb-3">
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="desarrollo.html">Desarrollo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Visualización</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="descargas.html">Descargas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fuentes.html">Fuentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobreNosotros.html">Acerca de nosotros</a>
+        </li>
+      </ul>
+    </nav>
+
+
+
+    <div class="card"></div>
+    <div class="card-header" id="headingOne">
+      <h7 class="mb-0">
+        Dado el tamaño de la base de datos y los multiples graficos que se podian derivar de estos,
+        se opto por implementar un tabla dinamica con graficos interactivos para que el usuario final pudiera hacer el
+        procedimiento de 'slice and dice'a los datos y asi obtener la información deseada
+      </h7>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+  <!-- division de la tabla dinamica -->
+  <div style="margin: 1em;" id="output"></div>
+
+  <footer class="border-top mt-5 py-4 text-center text-muted small">
+    <p>&copy; 2020 SPE Colombia Hackaton</p>
+  </footer>
+
+  <!-- JavaScript and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
