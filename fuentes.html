@@ -1,12 +1,19 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Descargas | Hackaton SPE 2020</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
-    <link rel="stylesheet" href="custom.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descargas | Hackaton SPE 2020</title>
+    <link rel="icon" type="image/png"
+      href="https://3.bp.blogspot.com/-A482OflwywE/VLykLRxSUEI/AAAAAAAAAOo/XfP2G7GbE0A/s1600/logo%2Bspe%2Bsesuai.png"
+      sizes="16x16 24x24 36x36 48x48">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
   <div class="my-bg-photo bg-secondary text-white py-5 text-center shadow">
     <h1 class="display-4"> <strong>SPE Colombia Hackaton 2020</strong> </h1>
     <p class="lead mb-0"> <strong> Análisis datos Agencia Nacional de Hidrocarburos - ANH </strong></p>
@@ -36,31 +43,80 @@
       </ul>
     </nav>
 
-      <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Introduction
-              </button>
-            </h2>
-          </div>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Librerias y recursos utilizados en el desarrollo
+            </button>
+          </h2>
+        </div>
 
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-                <p class="font-weight-bold">Basic example</p>
-                
-                <ul>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                  <li>Lorem ipsum</li>
-                </ul>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
 
-            </div>
+            <p class="font-weight-bold">Libreria visualizacion de datos PivotTable.js</p>
+            <ul>
+              <a href="https://pivottable.js.org/examples" target="_blank">
+                <li>https://pivottable.js.org/examples/</li>
+              </a>
+            </ul>
+
+            <p class="font-weight-bold">Libreria formateo CSV para front-end Papa parse</p>
+            <ul>
+              <a href="https://www.papaparse.com/" target="_blank">
+                <li>https://www.papaparse.com/</li>
+              </a>
+            </ul>
+
+            <p class="font-weight-bold">Jupyter Notebook</p>
+            <ul>
+              <a href="https://jupyter.org/" target="_blank">
+                <li>https://jupyter.org/</li>
+              </a>
+            </ul>
+
+            <p class="font-weight-bold">Paquete analisis de datos Pandas</p>
+            <ul>
+              <a href="https://pandas.pydata.org/" target="_blank">
+                <li>https://pandas.pydata.org/</li>
+              </a>
+            </ul>
+
+            <p class="font-weight-bold">PostgreSQL</p>
+            <ul>
+              <a href="https://www.postgresql.org/" target="_blank">
+                <li>https://www.postgresql.org/</li>
+              </a>
+            </ul>
+
+
+            <p class="font-weight-bold">Paquetes miscelaneos entorno Anaconda</p>
+            <ul>
+              <a href="https://www.anaconda.com/" target="_blank">
+                <li>https://www.anaconda.com/</li>
+              </a>
+            </ul>
+
+            <p class="font-weight-bold">Framework CSS Front-End Bootstrap</p>
+            <ul>
+              <a href="https://getbootstrap.com/" target="_blank">
+                <li>https://getbootstrap.com/</li>
+              </a>
+            </ul>
+
+            <p class="font-weight-bold">Recursos JS, HTML, CSS Brad Schiff</p>
+            <ul>
+              <a href="https://github.com/LearnWebCode" target="_blank">
+                <li>https://github.com/LearnWebCode</li>
+              </a>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
 
 
     <footer class="border-top mt-5 py-4 text-center text-muted small">
@@ -68,7 +124,12 @@
     </footer>
 
     <!-- JavaScript and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
